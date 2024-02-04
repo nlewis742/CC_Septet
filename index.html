@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>The CC Septet</title>
   </head>
@@ -26,10 +27,11 @@
         <p>Thank you for visiting our website. We are a group of musicians who love to play music. We are available for hire for your next event. Please contact us for more information.</p>
         </div>
         <div class="albums">
-            <card>
+            <card><a href="about.html">
                 <h2>Upcoming Events</h2>
                 <img src="./Assets/wethreekings.jpg">
                 <p>Check back soon for upcoming events.</p>
+            </a>
             </card>
             <card>
                 <h2>Recent News</h2>
@@ -46,9 +48,42 @@
             <h3>Contact Us</h3>
             <p>Phone: 555-555-5555</p>
             <a href="mailto:tim.lackas@gmail.com">Email Us</a>
+            <p>or</p>
+        </div>
+        <div>
+       
+<!-- Button to trigger the modal -->
+<button onclick="openModal()">Subscribe to Our Mailing List</button>
+
+<!-- Modal Container -->
+<div id="modal-container">
+    <!-- Modal Content -->
+    <div id="modal-content">
+        <h2>Please Enter Your Information</h2>
+        <form id="myForm">
+            <!-- Your form fields go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+
+        </div>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-spotify"></a>
         </div>
     <footer>
         <p>&copy; 2017 The CC Septet</p>
     </footer>
 </main>
+<script src="script.js"></script>
   </body>
