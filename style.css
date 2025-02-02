@@ -132,8 +132,8 @@ card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .bandName {
